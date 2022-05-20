@@ -1,0 +1,14 @@
+TD1: average: 6.49 min: 3.07 max: 9.38
+TD2: average: 6.14 min: 3.29 max: 9.9
+TD3: average: 5.98 min: 3.5 max: 9.12
+TD4: average: 6.42 min: 3.86 max: 8.14
+TD5: average: 5.8 min: 3.29 max: 8.28
+TD6: average: 6.05 min: 3.06 max: 9.25
+TD7: average: 5.0 min: 3.38 max: 7.5
+TD8: average: 6.07 min: 3.1 max: 8.93
+TD9: average: 6.23 min: 3.09 max: 9.84
+TD10: average: 6.8 min: 3.57 max: 9.8
+TD11: average: 6.31 min: 3.78 max: 9.26
+TD12: average: 7.33 min: 5.31 max: 9.8
+TD13: average: 6.68 min: 3.6 max: 9.71
+TD14: average: 6.76 min: 3.66 max: 9.65

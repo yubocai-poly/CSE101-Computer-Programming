@@ -1,0 +1,5 @@
+SIZE 2
+ROW .#
+ROW #.
+CLUE (0,0) down: A (1)
+CLUE (1,1) across: B (1)

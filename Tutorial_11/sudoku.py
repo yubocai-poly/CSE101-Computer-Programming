@@ -1,34 +1,3 @@
-# CSE-101 Computer Programming
-
-## 📚 Professors
-- [Ben smith](https://www.lix.polytechnique.fr/~smith/)
-
-## 📚 Course Organization
-- 14 lectures (1.5h) and 14 Tutorials (2h) 49 hours in total with 5 ECTS
-
-## 📚 Course Arrangement
-- LEC 0: Transition tutorial
-- LEC 1: Functions and conditions
-- LEC 2: Tuples, lists, and iteration
-- LEC 3: String manipulation and file I/O
-- LEC 4: Strings and f-strings
-- LEC 5: Dictionaries
-- LEC 6: Objects and Classes
-- LEC 7: Modules
-- LEC 8: Collections of objects
-- LEC 9: Thinking about objects
-- LEC 10: Abstraction, encapsulation... and execution
-- LEC 11: Functions as objects
-- LEC 12: Recursion
-- LEC 13: Recursive Data Structures
-- LEC 14: Callbacks
-
-## ✏️ Project Sample - Sudoku
-- This is the program you trying to use python and Tkinker to create the Sudoku game.
-<img src="img/cse101.png" width = "600px" />
-
-Code sample:
-```python
 # -*- coding: utf-8 -*-
 
 class Sudoku:
@@ -128,10 +97,9 @@ class Sudoku:
                 self.delete(row, col)
                 
         # Like the hits in the exercise i use for sentense to solve this questtion
-```
+                
+     
 
-## 📚 Tools of this course
-JupyterLab, Python, TKinker, Spyder
-
-## 📚 Copyright
-Copyright by Ben Smith, Yubo Cai, Ecole Polytechnique
+    
+        
+    
