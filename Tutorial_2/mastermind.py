@@ -40,7 +40,7 @@ def black_pins(guess, code):
     blackpins = 0
     new_guess = []
     new_code = []
-    for i in range(4): #为什么这个地方必须是len(guess) 不能是4
+    for i in range(4): 
         if guess[i] == code[i]: 
             blackpins += 1
     return blackpins
@@ -54,7 +54,7 @@ def score_guess(guess, code):
     """
     new_guess = []
     new_code = []
-    for i in range(4): #为什么这个地方必须是len(guess) 不能是4
+    for i in range(4): 
         if guess[i] != code[i]:
             new_guess.append(guess[i])
             new_code.append(code[i])
