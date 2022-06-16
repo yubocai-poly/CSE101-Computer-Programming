@@ -76,6 +76,7 @@ def score_guess(guess, code):
 
 
 # Exercise 5 - User input
+# Exercise 8 - Making things more user-friendly
 def str_with_suffix(n):
     if n % 10 == 1 and n % 100 != 11:
         suffix = 'st'
@@ -99,6 +100,22 @@ def input_guess():
         if len(enter_guess) >= 4:
             break
         l = input(str_with_suffix(n) + 'pin:')
+        if l == 'Y' or l == 'YEL' or l == 'YEL' or l == 'YELL' or l == 'YELLO' or l == 'YELLOW':
+            l = 'YELLOW'
+        if l == 'R' or l == 'RE' or l == 'RED':
+            l = 'RED'
+        if l == 'G' or l == 'GR' or l == 'GRE' or l == 'GREE' or l == 'GREEN':
+            l = 'GREEN'
+        if l == 'P' or l == 'PU' or l == 'PUR' or l == 'PURP' or l == 'PURPL' or l == 'PURPLE':
+            l = 'PURPLE'
+        if l == 'B':
+            print(
+                "Please input an unambiguous prefix of a color from the list ['RED', 'GREEN', 'BLUE', 'PURPLE', 'BROWN', 'YELLOW']"
+            )
+        if l == 'BR' or l == 'BRO' or l == 'BROW' or l == 'BROWN':
+            l = 'BROWN'
+        if l == 'BL' or l == 'BLU' or l == 'BLUE':
+            l = 'BLUE'
         if l in COLORS:
             n += 1
             enter_guess.append(l)
