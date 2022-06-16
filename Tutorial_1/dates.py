@@ -6,11 +6,18 @@ Created on Wed Sep 22 19:38:07 2021
 @author: Yubo Cai
 """
 
-# Exercise 1
-def hello_world():
-    return 'Hello world!' # use return instead of print according to the requirement
+# Exercise 0 - Using console
+h = 'Hello'
+w = 'world'
+print(h + w)
 
-# Exercise 2
+
+# Exercise 1 -  Getting started
+def hello_world():
+    return 'Hello world!'  # use return instead of print according to the requirement
+
+
+# Exercise 2 - To work or not to work?
 def check_day(n):
     """
     Given an integer between 1 and 7 inclusive,
@@ -18,13 +25,14 @@ def check_day(n):
     depending on whether the day is a workday or not
     """
     if n < 1 or n > 7:
-        return None # invalid m
+        return None  # invalid m
     elif n >= 1 and n < 6:
         return 'work!'
     else:
         return 'rest!'
-    
-# Exercise 3
+
+
+# Exercise 3 - The months of the year
 def name_of_month(m):
     """Given an integer m between 1 and 12 inclusive,
     indicating a month of the year, returns the name of that month.
@@ -34,38 +42,39 @@ def name_of_month(m):
     """
     if m < 1 or m > 12:  # Non-existent month
         return None
-    elif m == 1:  
+    elif m == 1:
         return 'January'
-    elif m == 2:  
+    elif m == 2:
         return 'February'
-    elif m == 3:  
+    elif m == 3:
         return 'March'
-    elif m == 4:  
+    elif m == 4:
         return 'April'
-    elif m == 5:  
+    elif m == 5:
         return 'May'
-    elif m == 6:  
+    elif m == 6:
         return 'June'
-    elif m == 7:  
+    elif m == 7:
         return 'July'
-    elif m == 8:  
+    elif m == 8:
         return 'August'
-    elif m == 9:  
+    elif m == 9:
         return 'September'
-    elif m == 10:  
+    elif m == 10:
         return 'October'
     elif m == 11:
         return 'November'
-    elif m == 12:  
+    elif m == 12:
         return 'December'
-    
-# Exercise 4
+
+
+# Exercise 4 - From numbers to words
 def str_with_suffix(n):
     """Convert the integer n to a string expressing the corresponding 
     position in an ordered sequence.
     Eg. 1 becomes '1st', 2 becomes '2nd', etc.
     """
-    
+
     if n % 10 == 1 and n % 100 != 11:
         suffix = 'st'
     elif n % 10 == 2 and n % 100 != 12:
@@ -75,8 +84,9 @@ def str_with_suffix(n):
     else:
         suffix = 'th'
     return str(n) + suffix
-    
-# Exercise 5
+
+
+# Exercise 5 - Leap years
 def is_leap_year(y):
     """ Return True if y is a leap year, False otherwise. """
 
@@ -89,11 +99,12 @@ def is_leap_year(y):
     else:
         return False
 
-# Exercise 6
+
+# Exercise 6 - How many days in a month?
 def number_of_days(m, y):
     """Returns the number of days in month m of year y."""
     con = is_leap_year(y)
-    
+
     if m < 1 and m > 12:
         return None
     if m == 2:
@@ -105,25 +116,29 @@ def number_of_days(m, y):
     else:
         return 30
 
-# Exercise 7
+
+# Exercise 7 - Constructing dates
 def date_string(n, m, y):
     """Returns the full sentense of month"""
-    
+
     if n < 1 or m < 1 or m > 12:
         return 'Nonexistent date'
-    if n > number_of_days(m, y): #If the month is more than the dates of the month supposed to be, it turns nonexistence
+    if n > number_of_days(
+            m, y
+    ):  #If the month is more than the dates of the month supposed to be, it turns nonexistence
         return 'Nonexistent date'
     else:
-        return 'The ' + str_with_suffix(n) + ' of ' +  name_of_month(m) + ', ' + str(y)  
-   
-# Exercise 8
+        return 'The ' + str_with_suffix(n) + ' of ' + name_of_month(
+            m) + ', ' + str(y)
+
+
+# Exercise 8 - Breaking down times
 def time_string(b):
     """ Convert the number of seconds to mins hours and dates"""
-    
     """ Logic from my tutor, the days and hours, those four parts
     should operate independently or seperately. if it's zero then is empty"""
-    
-    sep = b # We use single equal to variable something, double equal dosen't change anything
+
+    sep = b  # We use single equal to variable something, double equal dosen't change anything
     days = sep // 86400
     sep = sep % 86400
     hours = sep // 3600
@@ -131,15 +146,15 @@ def time_string(b):
     minutes = sep // 60
     sep = sep % 60
     seconds = sep
-    
-    # Days 
+
+    # Days
     if days == 0:
         d_str = ''
     elif days == 1:
         d_str = str(days) + ' day, '
     else:
         d_str = str(days) + ' days, '
-   
+
     # Hours
     if hours == 0:
         h_str = ''
@@ -147,7 +162,7 @@ def time_string(b):
         h_str = str(hours) + ' hour, '
     else:
         h_str = str(hours) + ' hours, '
-        
+
     # Minutes
     if minutes == 0:
         m_str = ''
@@ -155,27 +170,11 @@ def time_string(b):
         m_str = str(minutes) + ' minute, '
     else:
         m_str = str(minutes) + ' minutes, '
-    
+
     # Seconds
     if seconds == 1:
         s_str = str(seconds) + ' second'
     else:
         s_str = str(seconds) + ' seconds'
-  
-    return d_str + h_str + m_str + s_str
-   
-        
 
-    
-    
-    
-        
-    
-    
-    
-        
-    
-   
-    
-   
-    
+    return d_str + h_str + m_str + s_str
