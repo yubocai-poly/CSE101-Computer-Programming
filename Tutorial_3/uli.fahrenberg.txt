@@ -1,0 +1,13 @@
+To: uli.fahrenberg@polytechnique.edu
+
+This is to notify you of your final results for the CSE101 course, see
+table below.  (Note that the two first and two lowest scores are
+excluded from the result.)
+
+TD1  TD2  TD3  TD4  TD5  TD6  Result
+------------------------------------
+2.0  6.0  2.5  6.5  3.0  7.0  13.5
+
+Best regards,
+and please get back to me if you have any questions,
+Your Teacher

@@ -1,0 +1,13 @@
+To: stefan.mengel@polytechnique.edu
+
+This is to notify you of your final results for the CSE101 course, see
+table below.  (Note that the two first and two lowest scores are
+excluded from the result.)
+
+TD1  TD2  TD3  TD4  TD5  TD6  Result
+------------------------------------
+6.0  6.0  9.0  5.0  5.0  8.0  17.0
+
+Best regards,
+and please get back to me if you have any questions,
+Your Teacher

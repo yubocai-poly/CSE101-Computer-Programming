@@ -1,0 +1,13 @@
+To: gleb.pogudin@polytechnique.edu
+
+This is to notify you of your final results for the CSE101 course, see
+table below.  (Note that the two first and two lowest scores are
+excluded from the result.)
+
+TD1  TD2  TD3  TD4  TD5  TD6  Result
+------------------------------------
+7.5  5.5  8.0  3.6  5.5  8.0  16.0
+
+Best regards,
+and please get back to me if you have any questions,
+Your Teacher
